@@ -1,6 +1,6 @@
 namespace calculation_console
 {
-    public class Subtraction : ICalculation
+    public class Subtraction : ICalculation, IExtendedCalculation
     {
         private readonly decimal x;
         private readonly decimal y;
@@ -20,6 +20,9 @@ namespace calculation_console
             return x - y;
         }
 
-
+        public decimal Calculate_Extended()
+        {
+            return x - y;
+        }
     }
 }
